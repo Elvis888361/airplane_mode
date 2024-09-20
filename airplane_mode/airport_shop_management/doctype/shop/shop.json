@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:shop_number",
+ "creation": "2024-09-19 15:50:05.640711",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shop_number",
+  "location",
+  "rent_amount",
+  "is_pubished",
+  "route",
+  "column_break_wsiz",
+  "airport",
+  "area",
+  "shop_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "shop_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shop Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_wsiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "square meters",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "shop_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Shop Status",
+   "options": "Available\nOccupied"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Currency",
+   "label": "Rent Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "airport",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Airport",
+   "options": "Airport"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_pubished",
+   "fieldtype": "Check",
+   "label": "Is Pubished?"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "is_pubished",
+ "links": [],
+ "modified": "2024-09-20 13:35:43.122579",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Shop",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Shops",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

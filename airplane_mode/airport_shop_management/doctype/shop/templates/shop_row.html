@@ -1,0 +1,11 @@
+{% if doc.shop_status == "Available" %}
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">{{ doc.title or doc.name }}</h5>
+        <p class="card-text"><i class="fas fa-map-marker-alt"></i> {{ doc.location }}</p>
+        <p class="card-text"><span class="badge bg-success">{{ doc.shop_status }}</span></p>
+        <a class="btn btn-primary" href="{{ doc.route }}">View Shop</a>
+    </div>
+</div>
+{% endif %}
+<!-- this is a sample default list template -->

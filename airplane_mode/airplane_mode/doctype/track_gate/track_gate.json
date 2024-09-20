@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{gate}-{###}",
+ "creation": "2024-09-20 10:52:33.827564",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gate",
+  "column_break_ypmr",
+  "airplane_flight",
+  "section_break_alhy",
+  "track_gate_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "gate",
+   "fieldtype": "Link",
+   "label": "Gate",
+   "options": "Gate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_alhy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "track_gate_table",
+   "fieldtype": "Table",
+   "label": "Track Gate Table",
+   "options": "Track Gate Table"
+  },
+  {
+   "fieldname": "column_break_ypmr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "airplane_flight",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airplane Flight",
+   "options": "Airplane Flight",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-20 11:04:35.634357",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Track Gate",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

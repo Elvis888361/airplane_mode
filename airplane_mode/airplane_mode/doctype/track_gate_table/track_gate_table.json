@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-20 10:56:31.103940",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "airplane_ticket",
+  "seat"
+ ],
+ "fields": [
+  {
+   "fieldname": "airplane_ticket",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Airplane Ticket",
+   "options": "Airplane Ticket"
+  },
+  {
+   "fetch_from": "airplane_ticket.seat",
+   "fieldname": "seat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Seat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-20 10:59:17.181952",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Track Gate Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
